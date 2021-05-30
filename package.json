@@ -1,0 +1,19 @@
+{
+  "name": "timestamp-converter",
+  "version": "1.0.0",
+  "description": "Timestamp Converter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QwertyAswal/timestamp-converter.git"
+  },
+  "author": "Qwerty Aswal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QwertyAswal/timestamp-converter/issues"
+  },
+  "homepage": "https://github.com/QwertyAswal/timestamp-converter#readme"
+}
