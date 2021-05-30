@@ -3,6 +3,7 @@ const express = require('express')
 const expressHandlebars = require('express-handlebars')
 const morgan = require('morgan')
 const appRouter = require('./app_public/routes/index')
+const apiRouter = require('./app_api/route/index')
 
 const PORT = process.env.PORT || 3000
 
@@ -20,6 +21,9 @@ app.set('views', path.join(__dirname, 'app_public', 'views'))
 
 app.use(express.static(path.join(__dirname, 'app_public', 'public')))
 
+app.use(express.json())
+
+app.use('/api', apiRouter)
 app.use('', appRouter)
 
 app.use((req, res) => {
