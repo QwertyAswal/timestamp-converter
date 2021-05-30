@@ -1,6 +1,5 @@
 const getDate = (req, res) => {
     const msg = {}
-
     if (!isNaN(req.params.date))
         req.params.date = parseInt(req.params.date)
     const date = new Date(req.params.date)
@@ -13,7 +12,6 @@ const getDate = (req, res) => {
         msg.utc = date.toUTCString()
         res.status(200)
     }
-
     res.json(msg)
 }
 
